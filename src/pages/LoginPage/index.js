@@ -20,7 +20,7 @@ const LoginPage = () => {
   function onSubmitHandler(event) {
     event.preventDefault();
     axios
-      .post(Endpoints.LOGIN_URL, user)
+      .post("", user)
       .then(
         (response) => {
           localStorage.setItem('token', response.data.token)
