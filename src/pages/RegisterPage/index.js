@@ -43,7 +43,7 @@ const RegisterPage = () => {
     event.preventDefault();
     if(validate()){
     axios
-      .post(Endpoints.REGISTER_URL, user)
+      .post("", user)
       .then(
         (response) => {
           console.log(response.data);
